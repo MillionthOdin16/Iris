@@ -76,6 +76,12 @@ repositories {
     }
     maven { url "https://arcanearts.jfrog.io/artifactory/archives" }
 
+    mavenCentral() // This is needed for dependencies.
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    mavenLocal() // This is needed for CraftBukkit and Spigot.
+
+
 }
 
 /**
