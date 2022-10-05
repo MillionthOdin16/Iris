@@ -81,10 +81,10 @@ repositories {
     maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven {
         url = uri("http://node2.bradarr.com:3801/releases")
+        allowInsecureProtocol()
         credentials {
             username = System.getenv("BRADARR_USER")
             password = System.getenv("BRADARR_PASS")
-            allowInsecureProtocol()
         }
     }
     mavenLocal() // This is needed for CraftBukkit and Spigot.
