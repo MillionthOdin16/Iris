@@ -80,7 +80,7 @@ repositories {
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven {
-        url = uri("http://node2.bradarr.com:3801/releases")
+        url = uri("http://maven.bradarr.com:3801/private")
         setAllowInsecureProtocol(true)
         credentials {
             username = System.getenv("BRADARR_USER")
